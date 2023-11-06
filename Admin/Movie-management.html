@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Movie Ticket Booking Admin</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/style1.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Movie Ticket Booking</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <!--Nav Start-->
+    <div class="nav-officer">
+        <div class="logo">
+            <a href="landingpage.html"><h1>Movie<span>Tickets</span></h1></a>
+        </div>
+        <div class="current-movies-list">
+            <p>MOVIE MANAGEMENT</p>
+        </div>
+        <div class="cart">
+            <div class="booking-details-customer">
+                <p><a href="landingpage.html">Home</a></p>
+                <div class="sign-out">
+                    <p><a href="#"><img src="static/assets/cheran.jpg" alt=""></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Nav end-->
+    <!--movie management starts-->
+    <div class="movie-mngt-nav">
+        <div class="movie-mngt-logo">
+            <img src="static/assets/movie-admin.jpeg" alt="">
+        </div>
+        <div class="city-select">
+            <i class="fa fa-map-marker"></i>
+            <select name="" id="">
+                <option value="">City</option>
+                <option value="">Salem</option>
+                <option value="">Coimbatore</option>
+                <option value="">Madurai</option>
+                <option value="">Erode</option>
+                <option value="">Coimbatore</option>
+            </select>
+        </div>
+        <div class="city-select-t">
+            <i class="fa fa-building"></i>
+            <select name="" id="">
+                <option value="">Theatre</option>
+                <option value="">INOX</option>
+                <option value="">ARRS MULTIPLEX</option>
+                <option value="">Ascars</option>
+                <option value="">KG Cinemas</option>
+                <option value="">Karpagam Theatre</option>
+            </select>
+        </div>
+    </div>
+    <div class="theatre-select">
+        <div class="theatre-city-name">
+            <p>Salem</p>
+        </div>
+        <hr>
+        <div class="theatre-name">
+            <div class="t-name">
+                <p>INOX</p>
+            </div>
+            <div class="theatre-details-admin">
+                <div class="formdiv">
+                    <input type="file" name="rcv" id="rcv" accept=".pdf" required class="fileinput single">
+               </div>
+                <div class="theatre-movie-detail">
+                    <input type="text" name="" id="" placeholder="Movie Name">
+                    <select name="" id="">
+                        <option value="">Day</option>
+                        <option value="">Mon</option>
+                        <option value="">Tue</option>
+                        <option value="">Wed</option>
+                        <option value="">Thur</option>
+                        <option value="">Fri</option>
+                        <option value="">Sat</option>
+                        <option value="">Sun</option>
+                    </select>
+                <input type="date" name="" id="">
+                </div>
+                <div class="theatre-show-time">
+                    <input type="checkbox" name="time" id="time">
+                    <input type="checkbox" name="time-1" id="time-1">
+                    <input type="checkbox" name="time-2" id="time-2">
+                    <input type="checkbox" name="time-3" id="time-3">
+                    <div class="show-time">
+                     <label for="time">09:00 AM</label>
+                    </div>
+                    <div class="show-time-1">
+                     <label for="time-1">02:30 PM</label>
+                    </div>
+                    <div class="show-time-2">
+                        <label for="time-2">06:00 PM</label>
+                    </div>
+                    <div class="show-time-3">
+                        <label for="time-3">10:30 PM</label>
+                    </div>
+                </div>
+                <div class="add-admin">
+                    <a href="">ADD</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="table table-admin">
+        <table>
+            <tr>
+                <th>Movie Name</th>
+                <th>Day</th>
+                <th>Date</th>
+                <th>Timing</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>Leo</td>
+                <td>Thu</td>
+                <td>19.10.2023</td>
+                <td>09:00 AM</td>
+                <td><a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>Leo</td>
+                <td>Fri</td>
+                <td>20.10.2023</td>
+                <td>09:00 AM</td>
+                <td><a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>Leo</td>
+                <td>Sat</td>
+                <td>21.10.2023</td>
+                <td>09:00 AM</td>
+                <td><a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>Kushi</td>
+                <td>Thu</td>
+                <td>19.10.2023</td>
+                <td>02:30 PM</td>
+                <td><a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>Kushi</td>
+                <td>Fri</td>
+                <td>20.10.2023</td>
+                <td>02:30 PM</td>
+                <td><a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>Kushi</td>
+                <td>Sat</td>
+                <td>21.10.2023</td>
+                <td>02:30 PM</td>
+                <td><a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>Mark Antony</td>
+                <td>Thu</td>
+                <td>19.10.2023</td>
+                <td>06:00 PM</td>
+                <td><a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>Mark Antony</td>
+                <td>Fri</td>
+                <td>20.10.2023</td>
+                <td>06:00 PM</td>
+                <td><a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>Mark Antony</td>
+                <td>Sat</td>
+                <td>21.10.2023</td>
+                <td>06:00 PM</td>
+                <td><a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>Vikram</td>
+                <td>Thu</td>
+                <td>19.10.2023</td>
+                <td>10:30 PM</td>
+                <td><a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>Vikram</td>
+                <td>Fri</td>
+                <td>20.10.2023</td>
+                <td>10:30 PM</td>
+                <td><a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td>Vikram</td>
+                <td>Sat</td>
+                <td>21.10.2023</td>
+                <td>10:30 PM</td>
+                <td><a href="#">Delete</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="Upload">
+        <a href="Movie-details.html">Upload</a>
+    </div>
+    <!--movie management end-->
+    <!--Footer Start-->
+    <div class="footer footer-1">
+        <div class="logo">
+            <h1>Movie<span>Tickets</span></h1>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+    
+
+     <!--Footer end-->
+</body>
+</html>
+</body>
+</html>

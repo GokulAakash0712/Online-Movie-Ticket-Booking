@@ -1,0 +1,2509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Movie Ticket Booking</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <!--Nav Start-->
+    <div class="nav">
+        <div class="logo">
+            <a href="index.html"><h1>Movie<span>Tickets</span></h1></a>
+        </div>
+        <div class="search">
+            <div class="input-search">
+                <input type="text" placeholder="Search Movies">
+            </div>
+            <div class="search-icon">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="city">
+            <select name="" id="">
+                <option value="">city</option>
+                <option value="">Salem</option>
+                <option value="">Coimbatore</option>
+                <option value="">Chennai</option>
+                <option value="">Madurai</option>
+                <option value="">Erode</option>
+            </select>
+        </div>
+        <div class="notify">
+            <i class="fa fa-bell" aria-hidden="true"></i>
+        </div>
+        <div class="cart">
+            <input type="checkbox" name="cart" id="cart">
+            <label for="cart"><i class="fa fa-ticket" aria-hidden="true"></i></label>
+            <div class="cart-info">
+                <div class="cart-info-items">
+                    <img src="static/assets/leo movie.jpg" alt="">
+                    <div class="movie-name-cancel">
+                        <p>Leo</p>
+                    </div>
+                    <div class="cancel-cart">
+                        <a href="#">Cancel Request</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sign-in">
+            <p><a href="login.html">SignIn</a></p>
+        </div>
+    </div>
+    <!--Nav end-->
+    <!--Trailer Start-->
+    <div class="trailer">
+        <div class="trailer-video">
+            <input type="checkbox" name="tr-1" id="tr-1">
+            <label for="tr-1"><img src="static/assets/Leo Trailer.jpg" alt=""></label>
+            <div class="video1">
+                <video src="static/assets/leo.mp4" controls class="video-1"></video>
+            </div>
+        </div>
+        <div class="trailer-video">
+            <a href=""><img src="static/assets/Captain Miller.jpg" alt=""></a>
+        </div>
+        <div class="trailer-video">
+                <a href=""><img src="static/assets/Dhuruva Natchathirama.jpg" alt=""></a>
+        </div>
+        <div class="trailer-video">
+                <a href=""><img src="static/assets/Iayalan.jpg" alt=""></a>
+        </div>
+        <div class="trailer-video">
+                <a href=""><img src="static/assets/vaadivasal.jpg" alt=""></a>
+        </div>
+        <div class="trailer-video">
+                <a href=""><img src="static/assets/Falsh Back.jpg" alt=""></a>
+        </div>
+        <div class="trailer-video">
+                <a href=""><img src="static/assets/PT Sir.jpg" alt=""></a>
+        </div>
+        <div class="trailer-video">
+                <a href=""><img src="static/assets/Kushi.jpg" alt=""></a>
+        </div>
+    </div>
+    <!--Trailer End-->
+    <!--movie info start-->
+    <div class="movie-info">
+        <div class="banner">
+            <img src="static/assets/leo banner2.jpg" alt="">
+        </div> 
+    </div>
+    <div class="float">
+        <a href="#"><i class="fa fa-arrow-up"></i></a>
+     </div>
+    <div class="movie-des1">
+        <div class="banner-3">
+            <img src="static/assets/leo movie.jpg" alt="">
+        </div>
+        <div class="movie-name1">
+            <h1 class="mov-name">Leo - Tamil</h1>
+            <ul class="mov-genre">
+                <li>UA</li>
+                <li>Action</li>
+                <li>Thriller</li>
+            </ul>
+            <p class="date">19, OCT, 09:00 AM</p>
+            <input type="checkbox" name="tickets" id="tickets_select">
+            <label for="tickets_select" class="tickets_select">
+                2 Tickets <i class="fa fa-pencil" aria-hidden="true"></i>
+            </label>
+            <div class="seats_selection">
+                <div class="No_of_tickets">
+                    <div class="no_of_seats">
+                        <p class="seat-clr-selection">How Many Seats?</p>
+                    </div>
+                    <div class="seat_image">
+                        <img src="static/assets/seat.jpeg" alt="">
+                    </div>
+                    <div class="no_tickets">
+                        <div class="No_of_seats">
+                           <a href="#">1</a>
+                        </div>
+                        <div class="No_of_seats seat-select-clr">
+                            <a href="#">2</a>
+                        </div>
+                        <div class="No_of_seats">
+                            <a href="#">3</a>
+                        </div>
+                        <div class="No_of_seats">
+                            <a href="#">4</a>
+                        </div>
+                        <div class="No_of_seats">
+                            <a href="#">5</a>
+                        </div>
+                        <div class="No_of_seats">
+                            <a href="#">6</a>
+                        </div>
+                        <div class="No_of_seats">
+                            <a href="#">7</a>
+                        </div>
+                        <div class="No_of_seats">
+                            <a href="#">8</a>
+                        </div>
+                        <div class="No_of_seats">
+                            <a href="#">9</a>
+                        </div>
+                        <div class="No_of_seats">
+                            <a href="#">10</a>
+                        </div>
+                    </div>
+                    <div class="class-seat">
+                        <div class="f-class">
+                            <p>FIRST CLASS</p>
+                            <h2>Rs. 150.00</h2>
+                            <p class="avail">Available</p>
+                        </div>
+                        <div class="s-class">
+                            <p>SECOND CLASS</p>
+                            <h2>Rs. 120.00</h2>
+                            <p class="avail">Available</p>
+                        </div>
+                    </div>
+                    <div class="select-seat">
+                        <a href="#seat-2">Select Seat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Movie info End-->
+    <!--Show details start-->
+    <div class="show-details seat-details seat-day">
+        <div class="day">
+            <a href="#">
+                <div class="day-item clr">
+                    <p>THU</p>
+                    <P>19</P>
+                    <P>OCT</P>
+                </div>
+            </a>
+            <a href="#">
+                <div class="day-item">
+                    <p>FRI</p>
+                    <P>20</P>
+                    <P>OCT</P>
+                </div>
+            </a>
+            <a href="#">
+                <div class="day-item">
+                    <p>SAT</p>
+                    <P>21</P>
+                    <P>OCT</P>
+                </div>
+            </a>
+        </div>
+        <div class="show-detail seat-detail">
+            <div class="show-detail-item clr">
+                <p>Tamil - 2D</p>
+            </div>
+        </div>
+    </div>
+    <!--Show details end-->
+    <!--available start-->
+    <div class="available seat-available" id="seat-2">
+        <p class="avail seat-avail"><i class="fa fa-square" aria-hidden="true"></i> Available</p>
+        <p class="book"><i class="fa fa-square" aria-hidden="true"></i> Booked</p>
+    </div>
+    <!--available end-->
+    <!--seat selection start-->
+    <div class="seating">
+        <div class="first">
+            <p>FIRST CLASS - Rs.150.00</p>
+        </div>
+        <hr>
+        <div class="seat-row-1">
+            <div class="seat-row-name">
+                <p>A</p>
+            </div>
+            <div class="seat-col-1">
+                <input type="checkbox" name="seat" id="seat">
+                <input type="checkbox" name="seat-1" id="seat-1">
+                <label for="seat" class=" seat-box-c">
+                    <div class="seat-box seat-clr">
+                        <a href="#option">1</a>
+                    </div>
+                </label>
+                <label for="seat-1" class=" seat-box-c">
+                    <div class="seat-box seat-clr">
+                        <p>2</p>
+                    </div>
+                </label>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+                
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>B</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>C</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>D</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>E</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>F</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>G</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>H</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>I</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>J</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="seating-1">
+        <div class="first">
+            <p>SECOND CLASS - Rs.120.00</p>
+        </div>
+        <hr>
+        <div class="seat-row-1">
+            <div class="seat-row-name">
+                <p>K</p>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>L</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>M</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>N</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>O</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>P</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>Q</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>R</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>S</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>T</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box">
+                    <p>1</p>
+                </div>
+                <div class="seat-box">
+                    <p>2</p>
+                </div>
+                <div class="seat-box">
+                    <p>3</p>
+                </div>
+                <div class="seat-box">
+                    <p>4</p>
+                </div>
+                <div class="seat-box">
+                    <p>5</p>
+                </div>
+                <div class="seat-box">
+                    <p>6</p>
+                </div>
+                <div class="seat-box">
+                    <p>7</p>
+                </div>
+                <div class="seat-box">
+                    <p>8</p>
+                </div>
+                <div class="seat-box">
+                    <p>9</p>
+                </div>
+                <div class="seat-box">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box">
+                    <p>11</p>
+                </div>
+                <div class="seat-box">
+                    <p>12</p>
+                </div>
+                <div class="seat-box">
+                    <p>13</p>
+                </div>
+                <div class="seat-box">
+                    <p>14</p>
+                </div>
+                <div class="seat-box">
+                    <p>15</p>
+                </div>
+                <div class="seat-box">
+                    <p>16</p>
+                </div>
+                <div class="seat-box">
+                    <p>17</p>
+                </div>
+                <div class="seat-box">
+                    <p>18</p>
+                </div>
+                <div class="seat-box">
+                    <p>19</p>
+                </div>
+                <div class="seat-box">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box">
+                    <p>21</p>
+                </div>
+                <div class="seat-box">
+                    <p>22</p>
+                </div>
+                <div class="seat-box">
+                    <p>23</p>
+                </div>
+                <div class="seat-box">
+                    <p>24</p>
+                </div>
+                <div class="seat-box">
+                    <p>25</p>
+                </div>
+                <div class="seat-box">
+                    <p>26</p>
+                </div>
+                <div class="seat-box">
+                    <p>27</p>
+                </div>
+                <div class="seat-box">
+                    <p>28</p>
+                </div>
+                <div class="seat-box">
+                    <p>29</p>
+                </div>
+                <div class="seat-box">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="seating">
+        <div class="first">
+            <p>THIRD CLASS - Rs.60.00</p>
+        </div>
+        <hr>
+        <div class="seat-row-2">
+            <div class="seat-row-name">
+                <p>U</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box seat-clr">
+                    <p>1</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>2</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>3</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>4</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>5</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>6</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>7</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>8</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>9</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box seat-clr">
+                    <p>11</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>12</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>13</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>14</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>15</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>16</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>17</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>18</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>19</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box seat-clr">
+                    <p>21</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>22</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>23</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>24</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>25</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>26</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>27</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>28</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>29</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+        <div class="seat-row-2  seat-book">
+            <div class="seat-row-name">
+                <p>V</p>
+            </div>
+            <div class="seat-col-1">
+                <div class="seat-box seat-clr">
+                    <p>1</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>2</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>3</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>4</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>5</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>6</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>7</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>8</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>9</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="seat-col-2">
+                <div class="seat-box seat-clr">
+                    <p>11</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>12</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>13</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>14</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>15</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>16</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>17</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>18</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>19</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>20</p>
+                </div>
+            </div>
+            <div class="seat-col-3">
+                <div class="seat-box seat-clr">
+                    <p>21</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>22</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>23</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>24</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>25</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>26</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>27</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>28</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>29</p>
+                </div>
+                <div class="seat-box seat-clr">
+                    <p>30</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="screen">
+        <img src="static/assets/screen.jpeg" alt="">
+    </div>
+    <div class="option-2" id="option">
+        <div class="pay">
+            <a href="proceed - Guest.html">Pay Rs.300.00</a>
+        </div>
+        <div class="cancel-1">
+            <a href="show_time - Guest.html">Cancel</a>
+        </div>
+    </div>
+    <!--seat selection start-->
+    
+    <!--Footer Start-->
+    <div class="footer">
+        <div class="logo">
+            <h1>Movie<span>Tickets</span></h1>
+        </div>
+        <div class="service">
+            <div class="service-item">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <p>24/7 Customer Support</p>
+            </div>
+            <div class="service-item">
+                <i class="fa fa-ticket"></i>
+                <p>Resend Booking Confirmation</p>
+            </div>
+            <div class="service-item">
+                <i class="fa fa-envelope"></i>
+                <p>Newsletter Subscription</p>
+            </div>
+        </div>
+        <div class="subscribe">
+            <div class="input-subscribe">
+                <input type="text" placeholder="Enter Email">
+            </div>
+            <div class="subscribe-btn">
+                <a href="#">Subscribe</a>
+            </div>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+     <!--Footer end-->
+</body>
+</html>

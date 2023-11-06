@@ -1,0 +1,862 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Clicker+Script&family=Dancing+Script:wght@400;500&family=Metal+Mania&family=Nosifer&family=Poppins:wght@200;300;400;500;600&family=Roboto+Slab&family=Sedgwick+Ave+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*admin start*/
+.admin-main-container
+{
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+}
+.admin-container
+{
+    min-height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-admin img
+{
+    height: 300px;
+    width: 300px;
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.box-admin img:hover{
+    transform: translateY(-20px);
+}
+.box-admin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    font-size: 20px;
+}
+/*admin end*/
+/*Movie Management starts*/
+.movie-mngt-nav{
+    height: 100px;
+    width: 100%;
+    background-color: #1F2533;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.movie-mngt-logo{
+    margin-left: 50px;
+    height: 80px;
+    width: 80px;
+}
+.movie-mngt-logo img{
+    height: 100%;
+    width: 100%;
+}
+.city-select select
+{
+    height: 30px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    padding-left: 5px;
+    border-radius: 7px;
+    border: 0.5px solid rgba(255, 255, 255, 0.634);
+    outline: none;
+}
+.city-select select option
+{
+    color: white;
+    background-color: #1F2533;
+}
+.city-select-t select
+{
+    height: 30px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    padding-left: 5px;
+    border-radius: 7px;
+    border: 0.5px solid rgba(255, 255, 255, 0.634);
+    outline: none;
+    margin-right: 50px;
+}
+.city-select-t select option
+{
+    color: white;
+    background-color: #1F2533;
+}
+.theatre-select
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.theatre-city-name
+{
+    font-size: 20px;
+    padding-top: 20px;
+}
+.theatre-city-name::after
+{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #FF0000;
+    margin-top: 5px;
+}
+.theatre-name
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    margin-top: -20px;
+}
+.t-name
+{
+    border: 1px solid;
+    padding: 1% 92%;
+}
+.theatre-details-admin
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+.theatre-movie-detail input
+{
+    height: 40px;
+    width: 250px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.theatre-movie-detail select
+{
+    height: 40px;
+    width: 250px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.theatre-show-time
+{
+    display: flex;
+    font-size: 20px;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+.theatre-show-time label
+{
+    font-weight: normal;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.theatre-show-time input[type="checkbox"]
+{
+    position: absolute;
+    left: 0;
+    appearance: none;
+}
+#time:checked ~ .show-time label
+{
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+}
+#time-1:checked ~ .show-time-1 label
+{
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+}
+#time-2:checked ~ .show-time-2 label
+{
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+}
+#time-3:checked ~ .show-time-3 label
+{
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+}
+.add-admin a
+{
+    color: white;
+    text-decoration: none;
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    padding: 5px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.add-admin{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.fileinput{
+    margin-left: 10px;
+    color: transparent;
+
+}
+.fileinput::-webkit-file-upload-button {
+    visibility:hidden;
+
+}
+.fileinput::before {
+    content: 'Select Multiple Files';
+    color: #1450A3;
+    display: inline-block;
+    background-color: #ECF8F9;
+    color: #1450A3;
+    border: 2px solid #1450A3;
+    padding: 5px 10px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 700;
+}
+.fileinput:hover::before {
+    background-color: #1450A3;
+    color: #ECF8F9;
+    border: 2px solid aliceblue;
+}
+.fileinput:active::before {
+    background: -webkit-linear-gradient(top, #068DA9, #068DA9); 
+}
+.single::before{
+    content: 'Upload Movie Image';
+}
+.formdiv
+{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+}
+table{
+    width: 1200px;
+}
+.table-admin
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.Upload
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.Upload a{
+    color: white;
+    text-decoration: none;
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    padding: 5px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.row-admin-movie
+{
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.row-admin-movie img{
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+.movie-upload-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.movie-upload-name{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.movie-upload-name h1{
+    font-size: 50px;
+    font-family: "Nosifer", sans-serif;
+    color: rgb(155, 67, 3);
+}
+.movie-upload-name h1::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #FF0000;
+}
+.movie-sec-1{
+    display: flex;
+    border: 1px solid;
+    padding: 50px;
+    gap: 50px;
+}
+.movie-col-1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border: 1px solid;
+    padding: 20px;
+}
+.movie-col-1 input
+{
+    height: 30px;
+    width: 250px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.movie-col-1 select{
+    height: 35px;
+    width: 260px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.movie-col-2{
+    border: 1px solid;
+    padding: 20px;
+}
+.movie-upload-box
+{
+    width: 175px;
+    height: 75px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+.movie-col-2 input[type="date"]{
+    height: 32px;
+    width: 165px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+.movie-col-3{
+    border: 1px solid;
+    padding: 20px;
+    position: relative;
+}
+.movie-col-3 h2{
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.movie-col-3-1, .movie-col-3-2{
+    margin-top: 20px;
+}
+.trailer-box
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.movie-col-3-1{
+    border: 1px solid;
+    padding: 20px;
+}
+.trailer-box img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    border: 1px solid;
+}
+.trailer-box video{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: 1px solid;
+}
+.trailer-box a
+{
+    text-decoration: none;
+    border: 1px solid #FF0000;
+    color: white;
+    background-color: #FF0000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.movie-col-3-2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border: 1px solid;
+    padding: 20px;
+    padding-top: 50px;
+    margin-left: 10px;
+}
+.movie-col-3-2 a
+{
+    text-decoration: none;
+    border: 1px solid #FF0000;
+    color: white;
+    background-color: #FF0000;
+    padding: 5px 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.single-1::before{
+    content: 'Banner Image';
+}
+.single-2::before{
+    content: 'Trending Movie';
+}
+.single-3::before{
+    content: 'Select Image';
+}
+.single-4::before{
+    content: 'Select Video';
+}
+.single-5::before{
+    content: 'Select Image';
+}
+.movie-col-3{
+    display: flex;
+}
+.col-sec-1{
+
+    margin-top: 20px;
+}
+.col-sec-1 h2{
+    margin-bottom: 20px;
+}
+.col-sec-1 textarea{
+    height: 100px;
+    width: 1280px;
+}
+.movie-sec-3{
+    border: 1px solid;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+.movie-sec-3 .col-sec-1
+{
+    display: flex;
+    flex-direction: column;
+}
+.col-sec-3-1{
+    display: flex;
+    border: 1px solid;
+}
+.col-sec-3-1{
+    margin-bottom: 50px;
+}
+.col-sec-3-1-2{
+    display: flex;
+    flex-direction: column;
+}
+.movie-sec-3 img{
+    height: 100px;
+    width: 100px;
+}
+.col-sec-3-1-1{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    row-gap: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+.col-sec-3-1-1 input{
+    height: 30px;
+    width: 150px;
+    margin-left: 10px;
+    outline: none;
+    border: 1px solid;
+    padding-left: 2px;
+}
+.col-sec-3-1-1 a{
+    text-decoration: none;
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 7px;
+}
+.col-sec-3-1-2-1{
+    display: flex;
+    gap: 20px;
+    margin: 10px;
+    border: 1px solid;
+    padding: 10px;
+}
+.col-sec-3-1-2-1-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+.col-sec-3-1-2-1-box img{
+    border-radius: 100%;
+}
+.col-sec-3-1-2-1-box a{
+    text-decoration: none;
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 7px;
+}
+.col-sec-3-1-2-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid;
+    margin: 10px;
+    padding: 20px;
+}
+.col-sec-3-1-2-2 img{
+    border-radius: 100%;
+}
+.actors{
+    display: flex;
+    gap: 20px;
+}
+.movie-sec-3 .col-sec-2
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 20px;
+    gap: 10px;
+    margin-left: 40px;
+    height: 785px;
+    margin-top: 17px;
+}
+.col-sec-2-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid;
+    padding: 10px;
+}
+.col-sec-2-btn{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.col-sec-2-btn a
+{
+    text-decoration: none;
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 7px;
+}
+.movie-sec-3{
+    width: 81.5%;
+    margin-bottom: 50px;
+}
+.cast_crew{
+    margin-left: -1120px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.movie-det{
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.save-btn a{
+    text-decoration: none;
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    color: white;
+    padding: 10px 80px;
+    text-align: center;
+    border-radius: 7px;
+}
+.save-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.save-btn-2 a{
+    background-color: #1F2533;
+    border: 1px solid #1F2533;
+}
+.save-btn-2 {
+    margin-bottom: 20px;
+}
+
+/*Movie Management end*/
+
+
+
+
+/*Report Management start*/
+.report{
+    margin-bottom: 50px;
+    background-image: url("/Admin/static/assets/ticket admin.jpeg");
+}
+.search-1{
+    margin-top: 50px;
+}
+.table-1{
+    margin-bottom: 50px;
+}
+.footer-2{
+    margin-top: -50px;
+}
+.report-search-movie input
+{
+    height: 40px;
+    width: 550px;
+    border: 1px solid;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 20px;
+}
+.input{
+    position: relative;
+}
+.report-search-movie i{
+    position: absolute;
+    right: 500px;
+}
+.report-search-movie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/*Report Management end*/
+
+
+/*Theatre Management*/
+.theatre-management-container{
+    display: flex;
+    border: 1px solid;
+    justify-content: space-around;
+    margin: 50px;
+}
+.theatre-sec-1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border: 1px solid;
+    padding: 50px;
+}
+.theatre-sec-1 input{
+    height: 40px;
+    width: 250px;
+    padding-left: 10px;
+    border: 1px solid;
+    border-radius: 7px;
+    outline: none;
+}
+.theatre-sec-2{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 50px;
+    font-size: 15px;
+}
+.theatre-sec-col{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.theatre-sec-col1-1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    border: 1px solid;
+    min-height: 200px;
+    padding: 20px;
+}
+.theatre-sec-col1-1 a{
+    text-decoration: none;
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.theatre-sec-col1-2 input{
+    height: 40px;
+    padding-left: 10px;
+}
+.theatre-sec-col1-2 a{
+    text-decoration: none;
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    text-align: center;
+}
+.theatre-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.theatre-sec-col1-2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.theatre-main-sec{
+    display: flex;
+    margin: 50px;
+    gap: 50px;
+}
+.theatre-management{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.theatre-management h2{
+    font-family: "Metal Mania", sans-serif;
+    font-size: 40px;
+}
+.theatre-sec-3 a{
+    text-decoration: none;
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    text-align: center;
+}
+.theatre-sec-3{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+/*Admin Login*/
+.admin-login{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.admin-login input{
+    height: 40px;
+    width: 250px;
+    margin-bottom: 30px;
+    border: 1px solid;
+    outline: none;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+.login-btn{
+    margin-right: 20px;
+}
+.login-admin{
+    background-color: rgba(255, 255, 255, 0.427);
+}
+.page-name p{
+    color: white;
+    font-size: 40px;
+}
+.current-movies-list p{
+    color: white;
+    font-size: 30px;
+}
+.gold a{
+    background-color: gold;
+    border: 1px solid gold;
+}
+.edit a{
+    background-color: #1f2533a4;
+    border: 1px solid #1f2533a2;
+}
+.update{
+    height: 400px;
+    width: 250px;
+    border: 1px solid #1F2533;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.update i{
+    font-size: 50px;
+}
+.actions a{
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.table-3{
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    align-items: center;
+    margin-bottom: -120px;
+}
+.table-admin td:nth-child(1){
+    text-align: left;
+    padding-left: 20px;
+}
+.table-1 td{
+    text-align: left;
+    padding-left: 20px;
+}
+.table-1 td:nth-last-child(1){
+    text-align: center;
+}

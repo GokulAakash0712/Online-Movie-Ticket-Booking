@@ -1,0 +1,2721 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+/*Nav start*/
+.nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    width: 100%;
+    background-color: #333545;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 2;
+}
+.logo h1
+{
+    color: white;
+}
+.logo{
+    margin-left: -35px;
+}
+.logo h1 span
+{
+    color: #FF0000;
+}
+.logo a
+{
+    text-decoration: none;
+}
+.search
+{
+    height: 40px;
+    width: 550px;
+    position: relative;
+}
+.search .input-search input
+{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    padding-left: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.search .search-icon
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.city
+{
+    display: flex;
+    color: white;
+    font-size: 20px;
+    gap: 10px;
+    cursor: pointer;
+}
+.city select
+{
+    min-width: 10px;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 5px;
+    border-radius: 7px;
+    border: 0.5px solid rgba(255, 255, 255, 0.634);
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+.city select option
+{
+    background-color: #333545;
+    font-size: 20px;
+}
+.notify
+{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.cart
+{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.sign-in
+{
+    color: white;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sign-in a
+{
+    text-decoration: none;
+    color: white;
+}
+.cancel{
+    margin-top: 10px;
+}
+.cancel-cart{
+    margin-top: 10px;
+}
+/*Nav End*/
+
+/*Trailer start*/
+.trailer
+{
+    min-height: 150px;
+    width: 100%;
+    background-color: #1F2533;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    margin-top: 100px;
+}
+.trailer-video
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 4px solid white;
+}
+.trailer-video input[type="checkbox"]
+{
+    position: absolute;
+    appearance: none;
+}
+.video1
+{
+    width: 1350px;
+    height: 500px;
+    margin-top: 22px;
+    background-color: white;
+    display: none;
+}
+.video1 video{
+    width: 100%;
+    height: 100%;
+}
+.video2
+{
+    width: 1350px;
+    height: 500px;
+    margin-top: 22px;
+    background-color: white;
+
+}
+.video2 video{
+    width: 100%;
+    height: 100%;
+}
+.trailer-video img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+#tr-1:checked ~ .video1{
+    display: block;
+}
+#tr-2:checked ~ .video2{
+    display: block;
+}
+/*Trailer End*/
+
+/*Banner start*/
+.banner
+{
+    height: 500px;
+    width: 100%;
+}
+.banner img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 250px;
+}
+/*Banner End*/
+
+/*Recommende Movie Start*/
+.container-1
+{
+    margin-top: 300px;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    min-height: 400px;
+    width: 100%;
+}
+.container h2{
+    margin-left: 130px;
+
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 400px;
+    width: 100%;
+}
+.box
+{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 220px;
+    border: 0.5px solid #333545;
+    border-radius: 10px;
+}
+.box:hover{
+    transform: translateY(-15px);
+}
+.box .image
+{
+    height: 85%;
+    width: 100%;
+}
+.box .image img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.box .rating
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    height: 15%;
+    width: 100%;
+    background-color: #333545;
+    border-radius: 0 0 10px 10px;
+    color: white;
+}
+/*Recommende Movie End*/
+
+/*Footer start*/
+.footer{
+    min-height: 200px;
+    width: 100%;
+    background-color: #333545;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer .logo{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.footer .service{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    column-gap: 180px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+.footer .service i{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.subscribe{
+    position: relative;
+    width: 350px;
+    height: 41px;
+}
+.subscribe .subscribe-btn{
+    position: absolute;
+    top: 12px;
+    right: -20px;
+}
+.subscribe .subscribe-btn a{
+    text-decoration: none;
+    color: white;
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    border-radius: 0 10px 10px 0;
+    padding: 11px;
+}
+.subscribe .input-subscribe input
+{
+    height: 41px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.social{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.social i{
+    font-size: 25px;
+}
+.social a{
+    text-decoration: none;
+    color: black;
+}
+/*Footer end*/
+
+/*cart start*/
+.cart-info{
+    height: 100vh;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    top: 250px;
+    right: 0;
+    display: flex;
+    display: none;
+}
+.cart-info p{
+    color: #333545;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.cart-info-items{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    gap: 20px;
+}
+.cart-info img
+{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+.cart-info a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 10px;
+}
+.cart input[type="checkbox"]
+{
+    appearance: none;
+    cursor: pointer;
+}
+#cart:checked ~ .cart-info
+{
+    display: block;
+}
+/*cart end*/
+
+/*Login Page*/
+/*Login Start*/
+.login-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-c .login-b
+{
+    min-height: 200px;
+    width: 400px;
+    border: 1px solid;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-c .login-b .number{
+    margin-top: -8px;
+}
+.login-c .login-b p
+{
+    text-align: center;
+    margin-left: -10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.login-c .login-b .login-b-i
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.login-c .login-b .login-b-i i{
+    position: absolute;
+    left: 50px;
+    margin-top: 15px;
+}
+.login-c .login-b .login-b-i input[type="button"]{
+    height: 50px;
+    width: 250px;
+}
+.login-m
+{
+    display: flex;
+    gap: 12px;
+    margin-left: 20px;
+}
+.login-m .login-l img
+{
+    height: 20px;
+    width: 20px;
+}
+.mobile-no input{
+    height: 20px;
+    width: 180px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+}
+.login-b a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    padding: 10px 90px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.backgroung-image img
+{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.login-c{
+    position: absolute;
+    top: 80px;
+    left: 550px;
+}
+.login-b{
+    background-color: white;
+}
+/*Login end*/
+
+/*signout start*/
+.nav .sign-out
+{
+    height: 50px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+}
+.nav .sign-out img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+/*signout end*/
+
+
+/*Movie Description start*/
+.nav
+{
+    z-index: 10;
+}
+.trailer
+{
+    z-index: 10;
+}
+/*movie info start*/
+.movie-info
+{
+    position: relative;
+    z-index: -1;
+}
+.movie-info .banner img
+{
+    margin-top: 250px;
+}
+.movie-des
+{
+    display: flex;
+    position: absolute;
+    top: 300px;
+    left: 80px;
+}
+.movie-des .banner-2
+{
+    height: 400px;
+    width: 280px;
+}
+.movie-des .banner-2 img{
+    height: 100%;
+    width: 100%;
+}
+.movie-des .movie-details
+{
+    min-height: 100px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-left: 80px;
+    padding: 20px;
+}
+.movie-details
+{
+    color: white;
+}
+.movie-details .rating
+{
+    display: flex;
+    gap: 5px;
+}
+.movie-details .rate-now
+{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    border: 1px solid rgba(178, 176, 176, 0.34);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(178, 176, 176, 0.34);
+}
+.rate-now .content
+{
+    line-height: 1.75;
+}
+.rate-now .rate-btn a
+{
+    text-decoration: none;
+    color: white;
+    background-color: #FF0000;
+    padding: 5px 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.movie-details .buttons
+{
+    display: flex;
+    gap: 10px;
+}
+.movie-details .buttons .dimension
+{
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.movie-details .buttons .language
+{
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.movie-length
+{
+    margin-bottom: 20px;
+}
+.book-tickets a
+{
+    text-decoration: none;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 10px;
+}
+.share{
+    margin-left: 450px;
+}
+.share a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background-color: #222222b5;
+    border: 1px solid #222222b5;
+    padding: 8px 20px;
+}
+.share i{
+    color: white;
+    font-size: 25px;
+}
+/*movie info end*/
+
+/*about movie start*/
+.about-movie 
+{
+    margin-top: 280px;
+    margin-left: 80px;
+    line-height: 1.75;
+    font-size: 25px;
+    color: black;
+}
+/*about movie end*/
+
+.container-cast
+{
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.container-cast h3{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+.cast-item
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-left: 75px;
+    margin-bottom: 20px;
+}
+.container-cast .row-cast
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-cast .row-cast .cast-img
+{
+    height: 100px;
+    width: 100px;
+}
+.container-cast .row-cast .cast-img img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+hr
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container-movie
+{
+    margin-top: 50px;
+}
+.container-movie h2{
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+/*Movie Description End*/
+
+
+/*Show start*/
+.banner-3 img
+{
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+}
+.movie-des1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
+    color: white;
+    margin-top: -110px;
+    margin-left: 80px;
+}
+.movie-name1
+{
+    font-size: 15px;
+    line-height: 1.75;
+}
+.movie-name1 ul li
+{
+    display: inline-flex;
+    padding: 3px 10px;
+    margin-left: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.744);
+    color: black;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.744);
+}
+.mov-name
+{
+    margin-bottom: 10px;
+}
+.mov-genre
+{
+    margin-bottom: 10px;
+    margin-left: -8px;
+}
+.date
+{
+    margin-bottom: 10px;
+}
+.show-details
+{
+    height: 100px;
+    width: 100%;
+    background-color: #333545;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.seat-day
+{
+    position: absolute;
+    top: 160px;
+}
+.day
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 80px;
+}
+.day a{
+    color: black;
+    text-decoration: none;
+}
+.day .clr
+{
+    background-color: #FF0000;
+    color: white;
+}
+.day-item{
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.show-detail
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: 80px;
+}
+.show-detail .clr{
+    background-color: #FF0000;
+    color: white;
+}
+.show-detail-item{
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px 20px;
+}
+.avail i
+{
+    color: green;
+}
+.fast i{
+    color: red;
+}
+.available
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.seat-available{
+    margin-top: 190px;
+}
+.show-time{
+    display: flex;
+    flex-wrap: wrap;
+}
+.theatre{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.75;
+    margin-left: 100px;
+}
+.t-service{
+    display: flex;
+    margin-left: 19px;
+    gap: 20px;
+}
+.t-info{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.75;
+    margin-left: 570px;
+}
+.timings
+{
+    display: flex;
+    gap: 20px;
+}
+.timings a{
+    text-decoration: none;
+    color: green;
+    border: 1px solid black;
+    padding: 5px;
+}
+.timings a:hover{
+    background-color: green;
+    color: white;
+}
+.m-tickets{
+    color: green;
+}
+.food{
+    color: gold;
+}
+.heart i:hover{
+    color: #FF0000;
+}
+.filled{
+    color: red;
+    border: 1px solid black;
+    padding: 5px;
+}
+/*show end*/
+/*seat selection start*/
+.movie-name1 a
+{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.744);
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#seat-2{
+    scroll-margin-top: 270px;
+}
+.seat-detail
+{
+    margin-left: 970px;
+}
+.seat-details
+{
+    margin-top: 90px;
+}
+.seat-available{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.seat-available .seat-avail i
+{
+    color: rgba(128, 128, 128, 0.521);
+}
+.seat-available .book i
+{
+    color: green;
+}
+.seat-col-1
+{
+    position: relative;
+}
+#option{
+    display: none;
+}
+.seat-col-1 a{
+    text-decoration: none;
+    color: black;
+}
+.option-2{
+    margin-left: 630px;
+}
+#option:target{
+    display: block;
+}
+.pay a{
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    text-decoration: none;
+    color: white;
+    padding: 20px 60px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.pay{
+    margin-bottom: 55px;
+    margin-top: -80px;
+}
+.cancel-1 a{
+    background-color: #1F2533;
+    border: 1px solid #1F2533;
+    text-decoration: none;
+    color: white;
+    padding: 20px 87px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.cancel-1{
+    margin-bottom: 40px;
+}
+.seat-col-1 input[type="checkbox"]
+{
+    position: absolute;
+}
+.first{
+    margin-left: 180px;
+}
+.seat-row-1{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.seat-row-2{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 17px;
+}
+.seat-col-1, .seat-col-2, .seat-col-3{
+    display: flex;
+}
+.seat-box{
+    border: 1px solid black;
+    padding: 3px 5px;
+    margin-left: 7px;
+    background-color: green;
+}
+.seat-clr
+{
+    background-color: rgba(128, 128, 128, 0.521);
+}
+#seat:checked ~ .seat-box-c
+{
+    background-color: green;
+}
+.seat-col-1 input[type="checkbox"]
+{
+    appearance: none;
+}
+.seat-col-1{
+    position: relative;
+}
+.amount{
+    position: absolute;
+    top: 1250px;
+    right: -350px;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    padding: 20px 80px;
+    border-radius: 10px;
+    display: none;
+}
+.amount a{
+    text-decoration: none;
+    color: white;
+}
+.seat-book
+{
+    margin-bottom: 250px;
+}
+#seat:checked ~ .amount{
+    display: block;
+}
+.cancel{
+    position: absolute;
+    top: 1310px;
+    right: -350px;
+    border: 1px solid #1F2533;
+    background-color: #1F2533;
+    padding: 20px 80px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    display: none;
+}
+.cancel a{
+    text-decoration: none;
+    color: white;
+}
+.seat-book
+{
+    margin-bottom: 300px;
+}
+#seat:checked ~ .cancel{
+    display: block;
+}
+.screen{
+    position: absolute;
+    top: 2100px;
+    left: 500px;
+}
+.screen img{
+    width: 500px;
+    height: 50px;
+}
+.No_of_tickets{
+    border: 1px solid rgba(87, 83, 83, 0.636);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color:white;
+    color: black;
+    row-gap: 20px;
+    width: 500px;
+    position: absolute;
+    top: 349px;
+    right: 300px;
+}
+.seats_selection
+{
+    display: none;
+}
+.no_tickets
+{
+    display: flex;
+    gap: 20px;
+}
+.no_tickets a{
+    border-radius: 100%;
+}
+.seat_image img
+{
+    height: 100px;
+    width: 200px;
+}
+.seat-select-clr a
+{
+    border: 1px solid #FF0000;
+    border-radius: 100%;
+    background-color: #FF0000;
+    color: white;
+}
+.seat-clr-selection
+{
+    color: black;
+}
+.class-seat
+{
+    display: flex;
+    gap: 80px;
+}
+.f-class, .s-class
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.class-seat .avail
+{
+    color: green;
+}
+.select-seat a
+{
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 80px;
+}
+#tickets_select:checked ~ .seats_selection
+{
+    display: block;
+}
+#tickets_select
+{
+    appearance: none;
+}
+.tickets_select
+{
+    border: 1px solid rgba(255, 255, 255, 0.744);
+    background-color: rgba(255, 255, 255, 0.744);
+    color: black;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+/*seat selection end*/
+/*proceed start*/
+.show-deatils-1{
+    display: flex;
+    gap: 1100px;
+    margin-left: 80px;
+}
+.ticket
+{
+    border: 1px solid rgba(255, 255, 255, 0.744);
+    background-color: rgba(255, 255, 255, 0.744);
+    width: 100px;
+    padding: 8px 10px;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#proceed{
+    scroll-margin-top: 230px;
+}
+.ticket-1 a
+{
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    width: 150px;
+    padding: 8px 10px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.proceed
+{
+    min-height: 200px;
+    width: 100%;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+}
+.proceed-container
+{
+    min-height: 400px;
+    width: 300px;
+    margin: 50px;
+    position: relative;
+}
+.proceed-container img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.47;
+    border-radius: 8px;
+}
+.proceed-details
+{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.proceed-detail-image img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    opacity: 1;
+}
+.booking h2
+{
+    color: #FF0000;
+    margin-left: -20px;
+}
+.booking-details
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    margin-left: -20px;
+}
+.proceed-amount
+{
+    display: flex;
+    gap: 83px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.347);
+    padding: 10px 20px;
+    margin-left: -30px;
+}
+.proceed-btn a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    padding: 17px 117.5px;
+    border-radius: 0 0 10px 10px;
+    margin-left: -30px;
+}
+/*proceed end*/
+/*payment start*/
+.payment-content
+{
+    border: 1px solid white;
+    margin-top: 160px;
+}
+.payment
+{
+    display: flex;
+    align-items: center;
+    background-color: #333545;
+    margin: 50px;
+    height: 500px;
+    color: white;
+}
+.payment h3{
+    font-weight: bold;
+}
+.payment-details h3::after{
+    content: '';
+    display: block;
+    width: 55%;
+    margin-top: 10px;
+    height: 3px;
+    background-color: #FF0000;
+
+}
+.payment-details
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-left: 250px;
+}
+.contact
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.contact-details
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.contact-details input
+{
+    height: 40px;
+    width: 250px;
+    padding-left: 10px;
+}
+.payment-option
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.contact span{
+    color: #FF0000;
+}
+.payment-option-item input
+{
+   margin-bottom: 15px;
+   cursor: pointer;
+}
+.proceed-1
+{
+    margin-top: 50px;
+}
+.make-payment a
+{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    padding: 15px 70px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+/*payment end*/
+.payment-success
+{
+    border: 1px solid rgba(22, 223, 22, 0.81);
+    background-color: rgba(22, 223, 22, 0.81);
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 20px;
+    width: 330px;
+    margin-bottom: 50px;
+}
+.payment-content
+{
+    margin-top: 0;
+    border: none;
+}
+.payment
+{
+    border-radius: 10px;
+}
+
+
+
+/*officer starts*/
+.booking-details-customer{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    align-items: center;
+}
+.booking-details-customer a
+{
+    text-decoration: none;
+    color: white;
+}
+.nav-officer
+{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    width: 100%;
+    background-color: #333545;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.logo h1
+{
+    color: white;
+    margin-left: 50px;
+}
+.logo h1 span
+{
+    color: #FF0000;
+}
+.logo a
+{
+    text-decoration: none;
+}
+.nav-officer .cart
+{
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+.booking-details-customer
+{
+    display: flex;
+    margin-right: 50px;
+}
+.booking-details-customer img
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+.officer-search
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    background-image: url("/static/assets/ticket admin.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+.officer-search img{
+    height: 100px;
+    width: 100px;
+}
+.officer-search-bar input
+{
+    height: 40px;
+    width: 600px;
+    border: 1px solid;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.officer-search-bar{
+    position: relative;
+}
+.search-icon-officer
+{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+.background img
+{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+.footer-1
+{
+    margin-top: -10px;
+}
+.footer-1 .social
+{
+    margin-top: 60px;
+}
+.footer-1 .logo h1{
+    margin-left: -10px;
+    padding-top: 20px;
+}
+table, tr, th, td
+{
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+table
+{
+    border-collapse: collapse;
+}
+table a
+{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.table
+{
+    
+    color: black;
+    font-weight: bold;
+    height: 500px;
+    overflow-y: scroll;
+}
+th
+{
+    background-color: #333545;
+    color: white;
+}
+td
+{
+    background-color: white;
+}
+.theatre-search
+{
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+/*officer end*/
+.float{
+    border: 1px solid #FF0000;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 100%;
+    background-color: #FF0000;
+    margin-left: 1450px;
+    margin-top: 180px;
+    position: fixed;
+}
+.float a{
+    text-decoration: none;
+    color: white;
+}
+/*MOBILE VIEW START*/
+@media screen and (min-width:320px) and (max-width:768px){
+/*Nav start*/
+.nav
+{
+    row-gap: 20px;
+    padding-bottom: 100px;
+}
+.logo h1
+{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.search
+{
+    width: 320px;
+    margin-left: -10px;
+}
+/*Nav End*/
+
+/*Trailer start*/
+.trailer
+{
+    min-height: 100px;
+    margin-top: 196px;
+    overflow-x: hidden;
+    gap: 10px;
+}
+.trailer-video
+{
+        height: 40px;
+        width: 60px;
+        border-radius: 70%;
+}
+.trailer-video img
+{
+
+    background-size: cover;
+    object-fit: cover;
+}
+/*Trailer End*/
+/*Banner start*/
+.banner
+{
+    height: 300px;
+    width: 112%;
+}
+/*Banner End*/
+/*Movies*/
+/*Recommende Movie Start*/
+.container-1
+{
+    margin-top: 300px;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    min-height: 400px;
+    width: 100%;
+}
+.container h2{
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+.row
+{
+    row-gap: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.box
+{
+    height: 250px;
+    width: 150px;
+    margin-right: 20px;
+}
+.box .rating
+{
+    font-size: 12px;
+}
+/*Recommende Movie End*/
+/*Footer start*/
+.footer{
+    width: 112%;
+}
+.footer .service{
+    font-size: 15px;
+}
+.footer .service i{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.subscribe{
+    width: 280px;
+}
+/*Footer end*/
+/*movie info start*/
+.movie-des
+{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 300px;
+    left: 80px;
+}
+.movie-des .banner-2
+{
+    height: 200px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: -50px;
+}
+.movie-des .banner-2 img{
+    height: 100%;
+    width: 100%;
+}
+.movie-des .movie-details
+{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-left: -50px;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 10px;
+}
+.movie-details
+{
+    color: black;
+}
+.movie-details .rating
+{
+    display: flex;
+    gap: 5px;
+}
+.movie-details .rate-now
+{
+    padding: 8px;
+    font-size: 10px;
+}
+.movie-details .buttons .dimension
+{
+    background-color: #333545;
+    color: white;
+}
+.movie-details .buttons .language
+{
+   background-color: #333545;
+   color: white;
+}
+.movie-length
+{
+    margin-left: 5px;
+}
+.book-tickets a
+{
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.share{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    margin-left: 0px;
+}
+.share a{
+
+    font-size: 15px;
+    padding: 5px 10px;
+}
+.share i{
+    font-size: 15px;
+}
+/*movie info end*/
+/*about movie start*/
+.about-movie 
+{
+    margin-top: 520px;
+    margin-left: 55px;
+    line-height: 1.75;
+    font-size: 15px;
+    color: black;
+}
+hr
+{
+    width: 111%;
+}
+.container-cast h3{
+    font-size: 20px;
+    margin-left: 60px;
+}
+.cast-item
+{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    margin-left: 55px;
+}
+.container-cast .row-cast
+{
+    font-size: 8px;
+}
+.container-cast .row-cast .cast-img
+{
+    height: 50px;
+    width: 50px;
+}
+.container-movie h2{
+    margin-left: 95px;
+}
+/*about movie end*/
+/*Show start*/
+.banner-3 img
+{
+    height: 100px;
+    width: 100px;
+    margin-left: 40px;
+    margin-top: 182px;
+}
+.movie-des1{
+    flex-wrap: nowrap;
+    gap: 40px;
+    margin-left: 10px;
+    margin-top: -90px;
+}
+.movie-name1
+{
+    margin-top: 182px;
+    font-size: 12px;
+}
+.show-details
+{
+    height: 100px;
+    width: 100%;
+    background-color: #333545;
+    margin-top: 70px;
+    gap: 20px;
+    padding: 0 23px;
+    display: flex;
+}
+.day
+{
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+}
+.day-item{
+    height: 50px;
+    width: 50px;
+    font-size: 12px;
+}
+.show-detail
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 10px;
+}
+.show-detail-item{
+    padding: 15px 10px;
+    font-size: 12px;
+}
+.seat-available{
+    margin-top: 190px;
+}
+.show-time{
+    flex-wrap: wrap;
+}
+.theatre{
+    margin-left: 40px;
+}
+.t-service{
+    display: none;
+}
+.t-info{
+    margin-left: 40px;
+}
+.movie-info .banner img{
+    width: 100.5%;
+}
+/*show end*/
+/*seat selection start*/
+.seat-day
+{
+    position: absolute;
+    top: 200px;
+}
+#seat-2{
+    scroll-margin-top: 270px;
+}
+.seat-detail
+{
+    margin-left: 50px;
+}
+.seat-details
+{
+    margin-top: 90px;
+}
+.seat-available{
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.seating{
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.seating-1{
+    width: 100%;
+    overflow-x: scroll;
+}
+.first{
+    margin-left: 30px;
+}
+.seat-row-1{
+    margin-left: 450px;
+}
+.seat-row-2{
+    margin-left: 450px;
+}
+.seat-box{
+    padding: 1px 2px;
+    font-size: 12px;
+}
+
+.screen{
+    position: absolute;
+    top: 1730px;
+    left: 70px;
+}
+.screen img{
+    width: 300px;
+}
+.No_of_tickets{
+    padding: 20px;
+    row-gap: 10px;
+    width: 350px;
+    position: absolute;
+    top: 349px;
+    right: -35px;
+}
+.no_tickets
+{
+    display: flex;
+    gap: 10px;
+}
+/*seat selection end*/
+/*proceed start*/
+.movie-name-2{
+    font-size: 8px;
+}
+.show-deatils-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    margin-left: 10px;
+}
+.ticket
+{
+    border: 1px solid rgba(255, 255, 255, 0.744);
+    background-color: rgba(255, 255, 255, 0.744);
+    width: 100px;
+    padding: 8px 10px;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#proceed{
+    scroll-margin-top: 230px;
+}
+.ticket-1{
+    margin-top: -10px;
+}
+.ticket-1 a
+{
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    width: 150px;
+    padding: 8px 10px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.proceed
+{
+    min-height: 200px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+.proceed-container
+{
+    margin: 37px;
+}
+/*proceed end*/
+/*payment start*/
+.payment-content
+{
+    margin-top: 160px;
+}
+.payment
+{
+    width: 500px;
+    margin-bottom: -10px;
+    border-radius: 0;
+    margin-top: -123px;
+    margin-left: -80px;
+}
+.movie-des-2{
+    margin-top: -150px;
+}
+.payment-details
+{
+    margin-left: 150px;
+}
+.proceed-2{
+    display: none;
+}
+/*payment end*/
+.payment-success{
+    margin-top: 230px;
+    font-size: 13px;
+}
+.payment-1{
+    display: flex;
+    width: 134%;
+}
+.qr img{
+    height: 80px;
+    width: 80px;
+    margin-left: -30px;
+    margin-right: 10px;
+}
+.proceed-container-1{
+    width: 250px;
+    margin-left: -10px;
+    font-size: 13px;
+}
+.cart-info{
+    margin-top: 40px;
+}
+.option-2{
+    margin-left: 100px;
+}
+/*Login Page*/
+/*Login Start*/
+.login-c .login-b
+{
+    width: 300px;
+}
+.login-c .login-b .login-b-i
+{
+    margin-left: -17px;
+}
+.login-b a{
+    margin-left: 10px;
+}
+.backgroung-image img
+{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.login-c{
+    position: absolute;
+    top: 80px;
+    left: 35px;
+}
+.login-m{
+    margin-left: 5px;
+}
+/*Login end*/
+}
+/*MOBILE VIEW END*/
+/*TAB VIEW START*/
+@media screen and (width:768px)
+{
+/*Nav start*/
+.nav
+{
+    padding-top: 40px;
+}
+.logo h1
+{
+    font-size: 30px;
+}
+.logo{
+    margin-left: 20px;
+}
+.logo h1 span
+{
+    color: #FF0000;
+}
+.logo a
+{
+    text-decoration: none;
+}
+.search
+{
+    height: 40px;
+    width: 550px;
+    position: relative;
+}
+.search .input-search input
+{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    padding-left: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.search .search-icon
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.city
+{
+    display: flex;
+    color: white;
+    font-size: 20px;
+    gap: 10px;
+    cursor: pointer;
+}
+.city select
+{
+    min-width: 10px;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 5px;
+    border-radius: 7px;
+    border: 0.5px solid rgba(255, 255, 255, 0.634);
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+.city select option
+{
+    background-color: #333545;
+    font-size: 20px;
+}
+.notify
+{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.cart
+{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.sign-in
+{
+    color: white;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sign-in a
+{
+    text-decoration: none;
+    color: white;
+}
+.cancel{
+    margin-top: 10px;
+}
+.trailer-video{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+/*Nav End*/
+/*Banner start*/
+.banner
+{
+    height: 500px;
+    width: 112%;
+}
+.banner img
+{
+    margin-top: 270px;
+}
+/*Banner End*/
+/*Recommende Movie Start*/
+.container h2{
+    margin-left: 45px;
+    margin-bottom: -10px;
+
+}
+.container{
+    margin-left: 30px;
+}
+/*Recommende Movie End*/
+/*Footer start*/
+
+.footer .service{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    column-gap: 180px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+}
+.footer .service i{
+    font-size: 30px;
+}
+/*Footer end*/
+/*movie info start*/
+.movie-des
+{
+    top: 360px;
+    left: 100px;
+}
+.movie-des .banner-2
+{
+    height: 270px;
+    width: 180px;
+    margin-left: -30px;
+}
+
+.movie-des .movie-details
+{
+    row-gap: 10px;
+    margin-left: 40px;
+    margin-top: -5px;
+    font-size: 15px;
+    width: 350px;
+}
+.movie-details
+{
+    color: white;
+}
+.movie-details .rate-now
+{
+    padding: 8px;
+    font-size: 15px;
+}
+.movie-details .buttons .dimension
+{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+.movie-details .buttons .language
+{
+   background-color: white;
+   border: 1px solid white;
+   color: black;
+}
+.book-tickets a
+{
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.share{
+    right: -130px;
+}
+/*movie info end*/
+/*about movie start*/
+.about-movie 
+{
+    margin-top: 280px;
+    margin-left: 80px;
+    line-height: 1.75;
+    font-size: 25px;
+    color: black;
+}
+/*about movie end*/
+
+.container-cast
+{
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.container-cast h3{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+.cast-item
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-left: 75px;
+    margin-bottom: 20px;
+}
+.container-cast .row-cast
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    font-size: 17px;
+    justify-content: space-between;
+}
+.container-cast .row-cast .cast-img
+{
+    height: 100px;
+    width: 100px;
+}
+.container-cast .row-cast .cast-img img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+hr
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container-movie
+{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.container-movie h2{
+    margin-bottom: -10px;
+    margin-left: 40px;
+}
+/*Movie Description End*/
+/*Show start*/
+.banner-3 img
+{
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+}
+.movie-des1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
+    color: white;
+    margin-top: -300px;
+    margin-left: 80px;
+}
+.movie-name1
+{
+    font-size: 20px;
+    line-height: 1.75;
+}
+.show-details
+{
+    height: 100px;
+    width: 106.5%;
+    background-color: #333545;
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+.day
+{
+    margin-left: 20px;
+}
+.day-item{
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.show-detail-item{
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px 20px;
+}
+.available
+{
+    margin-right: 240px;
+}
+.theatre{
+    line-height: 2;
+    margin-left: 60px;
+}
+.t-service{
+    display: flex;
+    margin-left: -1px;
+    gap: 20px;
+}
+.t-info{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5;
+    margin-left: 570px;
+    margin-top: -60px;
+}
+/*show end*/
+/*seat selection start*/
+.seat-day
+{
+    position: absolute;
+    top: 200px;
+}
+#seat-2{
+    scroll-margin-top: 270px;
+}
+.seat-detail
+{
+    margin-left: 50px;
+}
+.seat-details
+{
+    margin-top: 90px;
+}
+.seat-available{
+    margin-left: 330px;
+    margin-bottom: 50px;
+    margin-top: 200px;
+}
+.seating{
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.seating-1{
+    width: 100%;
+    overflow-x: scroll;
+}
+.first{
+    margin-left: 60px;
+}
+.seat-row-1{
+    margin-left: 200px;
+}
+.seat-row-2{
+    margin-left: 200px;
+}
+.seat-box{
+    padding: 1px 2px;
+    font-size: 12px;
+}
+.screen{
+    position: absolute;
+    top: 1930px;
+    left: 300px;
+}
+.screen img{
+    width: 300px;
+    margin-top: 80px;
+}
+.No_of_tickets{
+    padding: 20px;
+    row-gap: 10px;
+    width: 550px;
+    position: absolute;
+    top: 389px;
+    right: 25px;
+}
+.no_tickets
+{
+    display: flex;
+    gap: 10px;
+}
+.option-2{
+    margin-left: 335px;
+    margin-top: -30px;
+}
+.movie-name1{
+    margin-top: 250px;
+}
+.movie-des1 .banner-3{
+    margin-top: 80px;
+}
+/*seat selection end*/
+/*proceed start*/
+
+.show-deatils-1{
+    gap: 610px;
+}
+.proceed-container
+{
+    margin: 37px;
+}
+.proceed{
+    margin-left: 55px;
+}
+/*proceed end*/
+/*payment start*/
+.payment-content
+{
+    border: 1px solid white;
+    margin-top: 100px;
+}
+.payment
+{
+    display: flex;
+    align-items: center;
+    background-color: #333545;
+    margin: 50px;
+    height: 500px;
+    width: 100%;
+    color: white;
+}
+.payment h3{
+    font-weight: bold;
+}
+.payment-details h3::after{
+    content: '';
+    display: block;
+    width: 55%;
+    margin-top: 10px;
+    height: 3px;
+    background-color: #FF0000;
+
+}
+.payment-details
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-left: 60px;
+}
+.contact
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.contact-details
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.contact-details input
+{
+    height: 40px;
+    width: 250px;
+    padding-left: 10px;
+}
+.payment-option
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.contact span{
+    color: #FF0000;
+}
+.payment-option-item input
+{
+   margin-bottom: 15px;
+   cursor: pointer;
+}
+.proceed-1
+{
+    margin-top: 50px;
+}
+.proceed-2{
+    display: block;
+}
+.make-payment a
+{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    padding: 15px 70px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.proceed-container{
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.proceed-container img{
+    height: 100%;
+}
+/*payment end*/
+.payment-success{
+    margin-top: -320px;
+    margin-left: 300px;
+    font-size: 13px;
+}
+.payment-1{
+    display: flex;
+    width: 100%;
+}
+.qr img{
+    height: 300px;
+    width: 300px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.proceed-container-1{
+    width: 270px;
+    margin-left: -10px;
+    font-size: 13px;
+}
+.movie-des-2{
+    margin-top: -340px;
+}
+/*Login Page*/
+/*Login Start*/
+.login-c .login-b
+{
+    width: 400px;
+}
+.login-c .login-b .login-b-i
+{
+    margin-left: -17px;
+}
+.login-b a{
+    margin-left: 10px;
+}
+.backgroung-image img
+{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.login-c{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+}
+.login-m{
+    margin-left: 5px;
+}
+/*Login end*/
+}
+/*TAB VIEW END*/
+/*320 VIEW START*/
+@media screen and (width:320px){
+/*Show Timing start*/
+.movie-info .banner img{
+    width: 102.5%;
+}
+.movie-name1{
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+}
+.movie-name1 ul{
+    display: flex;
+    flex-direction: row;
+}
+.show-details{
+    margin-top: 53px;
+}
+.available{
+    margin-left: 10px;
+}
+/*show Timing End*/
+/*Seat Selection Start*/
+.seat-day{
+    margin-top: 95px;
+    width: 101.2%;
+}
+.seat-available{
+    margin-left: 45px;
+}
+.pay{
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-left: -20px;
+}
+.cancel-1{
+    padding: 5px 5px;
+    font-size: 12px;
+    margin-left: -20px;
+}
+.screen{
+    margin-left: -30px;
+}
+.footer{
+    width: 115%;
+}
+.seats_selection .No_of_tickets{
+    width: 300px;
+}
+.no_tickets{
+    font-size: 7px;
+    display: flex;
+    gap: 5px;
+}
+/*Seat Selection End*/
+/*proceed start*/
+.proceed-details{
+    font-size: 12px;
+    margin-left: -20px;
+}
+.proceed-amount{
+    width: 89%;
+    margin-left: -9px;
+    font-size: 10px;
+    margin-top: 40px;
+}
+.proceed-btn{
+    margin-left: 20.5px;
+    margin-top: 2px;
+}
+.proceed{
+   width: 359px;
+   margin-left: -1px;
+}
+/*proceed end*/
+/*login start*/
+.login-c{
+    margin-left: -25px;
+}
+/*login end*/
+/*payment start*/
+.payment-details{
+    font-size: 12px;
+    width: 50%;
+}
+.payment{
+    width: 139.7%;
+}
+.payment-details input{
+    width: 200px;
+}
+.payment-details input[type="radio"]{
+    width: 10px;
+}
+.make-payment a{
+    font-size: 12px;
+    padding: 10px 50px;
+}
+/*payment end*/
+.qr{
+    margin-left: 103px;
+    margin-right: 10px;
+}
+}
+/*320 VIEW END*/
+/*1024 view start*/
+@media screen and (width:1024px) {
+    .share{
+        margin-left: -10px;
+    }
+    .seat-detail{
+        margin-left: -10px;
+    }
+    .seating{
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    .seating-1{
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .first{
+        margin-left: 60px;
+    }
+    .seat-row-1{
+        margin-left: -15px;
+    }
+    .seat-row-2{
+        margin-left: -15px;
+    }
+    .seat-box{
+        padding: 1px 2px;
+        font-size: 12px;
+    }
+    .screen{
+        margin-top: -100px;
+        margin-left: -200px;
+    }
+    .pay{
+        margin-left: -180px;
+    }
+    .cancel-1{
+        margin-left: -180px;
+    }
+    .show-detail-item{
+        margin-left: -50px;
+       
+    }
+    .show-deatils-1{
+        display: flex;
+        column-gap: 740px;
+    }
+    .login-c{
+        margin-left: -220px;
+    }
+    .payment-details{
+        margin-left: 100px;
+    }
+    .container-movies h2{
+        margin-left: 30px;
+    }
+    .footer .service{
+        font-size: 17px;
+    }
+    .footer .service i{
+        font-size: 20px;
+    }
+}
+/*1024view end*/
+/*1440view start*/
+@media screen and (width:1440px){ 
+    .share{
+        margin-left: 300px;
+    }
+}
+/*1440view end*/
